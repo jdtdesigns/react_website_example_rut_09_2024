@@ -1,15 +1,15 @@
 import Nav from './Nav';
 
-function Header(propsObj: { color: string; userName: string; count: number}) {
-  console.log(propsObj);
-
+function Header() {
   return (
     <header>
-      <h3 style={{backgroundColor: propsObj.color}}>{propsObj.userName}</h3>
+      <div className="logo">
+        <img src="/images/dino.jpg" alt="Dino Logo" />
+        <h3>JD Tadlock</h3>
+      </div>
+      
 
-      <p>Header Count: {propsObj.count}</p>
-
-      <Nav counterNum={propsObj.count} />
+      <Nav />
     </header>
   )
 }
