@@ -1,8 +1,10 @@
+import {NavLink} from 'react-router-dom';
+
 function Nav() {
   return (
     <nav>
-      <a href="#work">My Work</a>
-      <a href="#contact">Contact Me</a>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/contact">Contact Me</NavLink>
     </nav>
   )
 }

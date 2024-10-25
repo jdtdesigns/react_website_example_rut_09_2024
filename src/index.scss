@@ -55,7 +55,7 @@ header {
         margin-right: 8px;
       }
 
-      &:hover {
+      &:hover, &.active {
         text-decoration: underline;
       }
     }
@@ -66,6 +66,7 @@ header {
 section.hero {
   display: flex;
   background: #0E0E0E;
+  margin-bottom: 20px;
   div.image {
     background-image: url('/images/me_reversed.jpg');
     background-size: cover;
@@ -92,7 +93,6 @@ section.hero {
 
 // Work Section
 main {
-  padding: 15px 3%;
   color: #fff;
   flex: 1;
   h4 {
@@ -105,7 +105,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-
+    padding: 0 3%;
     article {
       padding: 15px;
       background-size: cover;
@@ -128,7 +128,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 0 auto 25px;
+  margin: 35px auto 25px;
 
   > * {
     padding: 7px 12px;
@@ -174,4 +174,26 @@ footer {
   padding: 35px 5%;
   background: #878787;
   color: #ccc;
+}
+
+
+@media (max-width: 750px) {
+  section.hero {
+    flex-direction: column;
+    
+    div.image {
+      min-height: 200px !important;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+
+    div.hero-text {
+      h4 {
+        margin-top: 10px;
+      }
+      p {
+        padding: 2px 30px 15px;
+      }
+    }
+  }
 }

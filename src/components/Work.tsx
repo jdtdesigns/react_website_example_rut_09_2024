@@ -2,7 +2,7 @@ import workItems from '../data';
 
 function Work() {
   return (
-    <main>
+    <>
       <h4 className="text-center">My Work</h4>
 
       <section id="work" className="work-output">
@@ -13,7 +13,7 @@ function Work() {
           </article>
         ))}
       </section>
-    </main>
+    </>
   )
 }
 
