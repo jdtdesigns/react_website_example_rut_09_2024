@@ -23,7 +23,7 @@ function Hero() {
       <div className="hero-text">
         <h4>Software Developer</h4>
         <p>Code the world...</p>
-        <p>{quote}</p>
+        <p className="text-center">{quote}</p>
       </div>
       <div>
       </div>
