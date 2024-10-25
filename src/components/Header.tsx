@@ -8,7 +8,6 @@ function Header() {
         <h3>JD Tadlock</h3>
       </div>
       
-
       <Nav />
     </header>
   )

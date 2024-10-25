@@ -5,7 +5,7 @@ function Work() {
     <main>
       <h4 className="text-center">My Work</h4>
 
-      <section className="work-output">
+      <section id="work" className="work-output">
         {workItems.map((workObj, index) => (
           <article key={index} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(${workObj.backgroundImage})` }}>
             <h5>{workObj.title}</h5>

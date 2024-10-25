@@ -1,9 +1,8 @@
 function Nav() {
   return (
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="#work">My Work</a>
+      <a href="#contact">Contact Me</a>
     </nav>
   )
 }
